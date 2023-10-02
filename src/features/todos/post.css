@@ -1,0 +1,19 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    margin: 2rem;
+}
+
+.cartbody{
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px rgb(207, 207, 228);
+}
+.title{
+    color: blue;
+}
+.desc{
+    text-align: justify;
+}

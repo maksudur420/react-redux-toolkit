@@ -3,18 +3,18 @@ import { createSlice } from '@reduxjs/toolkit'
 const counterSlicer =createSlice({
     name: "counter",
     initialState : {
-        count: 0
+        count: 10
     },
 
     reducers: {
         increment : (state)=>{
-            state.count = state.count + 1
+            state.count = state.count + 5
         },
         decrement : (state)=>{
-            state.count = state.count>0? state.count -1 :0;
+            state.count = state.count>0? state.count -2 :0;
         },
         reset : (state)=>{
-            state.count = 0
+            state.count =10
         }
     }
 
