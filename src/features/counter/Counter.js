@@ -3,14 +3,15 @@ import {useDispatch, useSelector} from 'react-redux'
 import { decrement, increment, reset } from './CounterSlicer';
 
 const Counter = () => {
-    const count = useSelector(state=>state.count);
+    const count = useSelector((state)=>state.counter.count);
+    
     const dispatch =useDispatch()
   return (
     <div>
         <h1>Count : {count}</h1>
-        <button onClick={()=>dispatch(increment())}></button>
-        <button onClick={()=>dispatch(decrement())}></button>
-        <button onClick={()=>dispatch(reset())}></button>
+        <button onClick={()=>dispatch(increment())}>INCREMENT</button>
+        <button onClick={()=>dispatch(decrement())}>DECREMENT</button>
+        <button onClick={()=>dispatch(reset())}>RESET</button>
     </div>
   )
 }
